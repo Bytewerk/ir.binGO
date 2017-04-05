@@ -156,6 +156,11 @@ func main() {
 						fmt.Println("    - " + key)
 					}
 					break
+				case "variables":
+					fmt.Println("The following variables are available:")
+					fmt.Println("    - device  The device you want to be sending commands to")
+					fmt.Println("    - delay   The delay you want to use between multiple commands")
+					break
 				default:
 					fmt.Println("Syntax: \"list [commands|presets]\"")
 					continue
