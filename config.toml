@@ -1,0 +1,146 @@
+[config]
+    requestpath = "http://localhost:8080/ecmd"
+    getprefix = "irmp send"
+
+[devices]
+    [devices.amplifier]
+        [devices.amplifier.settings]
+           prot = "02"
+           dev = "6DD2"
+
+        [devices.amplifier.presets]
+            [devices.amplifier.presets.makeitso]
+                commands = ["onoff", "volumeup", "volumeup", "volumeup", "volumeup", "volumeup", "volumeup", "volumeup", "volumeup", "volumeup", "volumeup", "dvd"]
+
+        [devices.amplifier.commands]
+            [devices.amplifier.commands.onoff]
+                command = "6DD2 0004"
+            [devices.amplifier.commands.sleep]
+                command = "6DD2 005D"
+            [devices.amplifier.commands.dimmer]
+                command = "6DD2 0095"
+            [devices.amplifier.commands.volumedown]
+                command = "6DD2 0003"
+            [devices.amplifier.commands.volumeup]
+                command = "6DD2 0002"
+            [devices.amplifier.commands.mute]
+                command = "6DD2 0005"
+            [devices.amplifier.commands.dvd]
+                command = "6CD2 008C"
+            [devices.amplifier.commands.tape]
+                command = "6DD2 0008"
+            [devices.amplifier.commands.tuner]
+                command = "6DD2 000B"
+            [devices.amplifier.commands.phono]
+                command = "6DD2 000A"
+            [devices.amplifier.commands.cd]
+                command = "6DD2 0009"
+            [devices.amplifier.commands.video1]
+                command = "6DD2 000F"
+            [devices.amplifier.commands.video2]
+                command = "6DD2 000E"
+            [devices.amplifier.commands.surmode]
+                command = "6DD2 004C"
+            [devices.amplifier.commands.multichinput]
+                command = "6CD2 0004"
+            [devices.amplifier.commands.group]
+                command = "6DD2 005C"
+            [devices.amplifier.commands.presetright]
+                command = "6DD2 0000"
+            [devices.amplifier.commands.presetleft]
+                command = "6DD2 0001"
+            [devices.amplifier.commands.cddisk]
+                command = "6DD2 005C"
+            [devices.amplifier.commands.cdforward]
+                command = "6DD2 001D"
+            [devices.amplifier.commands.cdpause]
+                command = "6DD2 001F"
+            [devices.amplifier.commands.cdplay]
+                command = "6DD2 001B"
+            [devices.amplifier.commands.cdrewind]
+                command = "6DD2 001E"
+            [devices.amplifier.commands.cdstop]
+                command = "6DD2 001C"
+            [devices.amplifier.commands.dvdback]
+                command = "6CD2 0090"
+            [devices.amplifier.commands.dvdforward]
+                command = "6CD2 0091"
+            [devices.amplifier.commands.dvdplay]
+                command = "6CD2 008D"
+            [devices.amplifier.commands.dvdrewind]
+                command = "6CD2 0092"
+            [devices.amplifier.commands.dvdskip]
+                command = "6CD2 008F"
+            [devices.amplifier.commands.dvdstop]
+                command = "6CD2 008E"
+            [devices.amplifier.commands.taperecordpause]
+                command = "6DD2 0015"
+            [devices.amplifier.commands.taperewind]
+                command = "6DD2 0016"
+            [devices.amplifier.commands.tapestop]
+                command = "6DD2 0013"
+            [devices.amplifier.commands.chsel]
+                command = "6CD2 0044"
+            [devices.amplifier.commands.leveldown]
+                command = "6CD2 0043"
+            [devices.amplifier.commands.levelup]
+                command = "6CD2 0042"
+
+    [devices.projector]
+        [devices.projector.settings]
+            prot = "02"
+            dev = "1308"
+
+        [devices.projector.presets]
+
+        [devices.projector.commands]
+            [devices.projector.commands.onoff]
+                command = "1308 0087"
+            [devices.projector.commands.3d]
+                command = "1308 008A"
+            [devices.projector.commands.hide]
+                command = "1308 008F"
+            [devices.projector.commands.aspectratio]
+                command = "1308 0060"
+            [devices.projector.commands.resync]
+                command = "1308 008D"
+            [devices.projector.commands.source]
+                command = "1308 008C"
+            [devices.projector.commands.zoom]
+                command = "1308 008B"
+            [devices.projector.commands.mute]
+                command = "1308 0080"
+            [devices.projector.commands.menu]
+                command = "1308 0084"
+            [devices.projector.commands.up]
+                command = "1308 0082"
+            [devices.projector.commands.left]
+                command = "1308 0083"
+            [devices.projector.commands.right]
+                command = "1308 0081"
+            [devices.projector.commands.down]
+                command = "1308 0085"
+            [devices.projector.commands.0]
+                command = "1308 005F"
+            [devices.projector.commands.1]
+                command = "1308 005A"
+            [devices.projector.commands.2]
+                command = "1308 005B"
+            [devices.projector.commands.3]
+                command = "1308 005C"
+            [devices.projector.commands.4]
+                command = "1308 0065"
+            [devices.projector.commands.5]
+                command = "1308 0066"
+            [devices.projector.commands.6]
+                command = "1308 0067"
+            [devices.projector.commands.7]
+                command = "1308 005E"
+            [devices.projector.commands.8]
+                command = "1308 004A"
+            [devices.projector.commands.9]
+                command = "1308 004B"
+            [devices.projector.commands.pgup]
+                command = "1308 005D"
+            [devices.projector.commands.pgdn]
+                command = "1308 009E"
