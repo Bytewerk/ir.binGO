@@ -33,8 +33,8 @@ Build
 Set up a Go environment and make sure your GOPATH is set correctly. Then execute the following commands:
 
     go get github.com/BurntSushi/toml
-    go get github.com/ThePlatzhalter/ir.binGO
-    go build -o $GOPATH/bin/ir.binGO github.com/ThePlatzhalter/ir.binGO
+    go get github.com/Bytewerk/ir.binGO
+    go build -o $GOPATH/bin/ir.binGO github.com/Bytewerk/ir.binGO
 
 License
 ===
